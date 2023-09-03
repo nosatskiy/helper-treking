@@ -36,19 +36,32 @@ nav > .nav-bar{
     padding-left: 0;
     margin: 0;
     padding: 0px 34px;
+    margin-right: 93px;
 }
 .nav-menu > li > a {
     text-decoration: none;
-    font-size: 35px;
+    font-size: 18px;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
     color: #030303;
+}
+.nav-menu > li > a:hover {
+    color: #fff;
+    transition: all .4s ease-in-out;
 }
 .nav-menu > li {
     display: inline-block;
     padding: 15px;
     border-radius: 20px;
     background-color: rgba(238, 238, 238, 1);
+}
+.nav-menu > li:hover {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #898989;
+    transition: all .4s ease-in-out;
+    color: #fff;
 }
 .nav-menu > li:nth-child(2){
     margin: 0px 24px 0px 24px
@@ -62,7 +75,7 @@ nav > .nav-bar{
     font-weight: 400;
     color: #000;
     text-decoration: none;
-    margin: 4px auto 4px 19px;
+    margin: 4px auto 4px 140px;
 }
 
 /* основний вміст */
@@ -71,32 +84,54 @@ article {
     margin: 10px 0px 10px 0px;
     background-color: rgba(242, 242, 242, 1);
     border-radius: 10px;
+    padding: 0px 174px 0px 174px;
+}
+article > h1 {
+    margin: 0px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Inter';
+    letter-spacing: 30px;
 }
 .main-information {
-    padding: 90px 32px 0px 70px;
+    padding-top: 15px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 70px;
+
+}
+.main-information:last-child {
+    margin-bottom: 10px;
 
 }
 .main-information > img {
-    width: 696px;
-    height: 447px;
-    margin-right: 38px;
+    width: 446px;
+    height: 287px;
+
 }
 .head-main-info {
     text-align: center;
-    margin: 0px 0px 41px 0px;
-    font-size: 48px;
+    margin: 0px 0px 35px 0px;
+    font-size: 20px;
     font-family: 'Inter';
     font-weight: 400;
 }
 .text-main-info {
-    font-size: 24px;
+    font-size: 14px;
     font-family: 'Inter';
     font-weight: 400;
-    margin: 0px 38px 0px 0px;
+    margin: 0px;
 }
-
+section {
+    padding: 90px 0px 22px 0px;
+}
+.main-text:nth-child(odd) {
+    margin-right: 80px;
+}
+.main-text:nth-child(even) {
+    margin-left: 80px;
+}
 
 /* підвал */
 
@@ -104,33 +139,55 @@ footer {
     background-color: #6D6D6D;
     color: #fff;
     border-radius: 10px;
+
 }
 .footer-info {
     display: flex;
     justify-content: space-between;
-    margin: 16px 59px 22px 59px;
+    margin: 12px 174px 16px 174px;
 
 }
-.footer-info > h2 {
-    font-size: 30px;
-    font-family: 'Inter';
-    font-weight: 400;
-}
-.footer-info > p {
+.adressa-number > h2 {
     font-size: 20px;
     font-family: 'Inter';
     font-weight: 400;
 }
-.line1 {
-    padding-top: 38px;
-    margin: 0px;
-    color: #000;
+
+.link-documents > h2 {
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.social-media > h2 {
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+.adressa-number > p {
+    font-size: 14px;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+.link-documents > p {
+    font-size: 14px;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.social-media > p {
+    font-size: 14px;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.social-media > img {
+    width: 40px;
+    height: 40px;
 }
 .copyright {
-    margin-left: 64px;
-    margin-bottom: 30px;
-}
-hr{
-    display: block;
-    color: #000;
+    margin-left: 180px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Inter';
 }
