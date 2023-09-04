@@ -163,7 +163,6 @@ footer {
     font-family: 'Inter';
     font-weight: 400;
 }
-
 .adressa-number > p {
     font-size: 14px;
     font-family: 'Inter';
@@ -191,3 +190,72 @@ footer {
     font-weight: 400;
     font-family: 'Inter';
 }
+@media screen and (max-width: 620px){
+    :root{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* Навігаційне меню та логотоп */
+
+    .nav-menu{
+        display: none;
+    }
+    nav {
+        padding-left: 6px;
+        padding-right: 7px;
+    }
+    .nav-bar-logo {
+        margin: 4px 0px 23px 10px;
+    }
+
+    /* основний вміст */
+
+    article{
+        padding: 0px 7px 0px 6px;
+    }
+    article > h1 {
+        margin: 0px;
+        padding-top: 30px;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Inter';
+        letter-spacing: 30px;
+    }
+    section {
+        padding: 23px;;
+    }
+    .main-information{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        order: 1;
+    }
+    .main-text {
+        margin: 0px;
+        order: 2;
+    }
+    .main-text:nth-child(odd) {
+        margin-right: 0px;
+    }
+    .main-text:nth-child(even) {
+        margin-left: 0px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+    .main-text > h2{
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    .main-text > p {
+        margin-top: 6px;
+        margin-bottom: 15px;
+    }
+    hr {
+        margin: 0px;
+    }
+}   
