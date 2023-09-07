@@ -54,6 +54,7 @@ nav > .nav-bar{
     padding: 15px;
     border-radius: 20px;
     background-color: rgba(238, 238, 238, 1);
+    margin: 0px 12px 0px 12px;
 }
 .nav-menu > li:hover {
     display: inline-block;
@@ -62,12 +63,6 @@ nav > .nav-bar{
     background-color: #898989;
     transition: all .4s ease-in-out;
     color: #fff;
-}
-.nav-menu > li:nth-child(2){
-    margin: 0px 24px 0px 24px
-}
-.nav-menu > li:nth-child(3){
-    margin: 0px 24px 0px 0px;
 }
 .nav-bar-logo {
     font-family: 'Inknut Antiqua';
@@ -147,39 +142,17 @@ footer {
     margin: 12px 174px 16px 174px;
 
 }
-.adressa-number > h2 {
+.title-text_footer {
     font-size: 20px;
     font-family: 'Inter';
     font-weight: 400;
 }
-
-.link-documents > h2 {
-    font-size: 20px;
-    font-family: 'Inter';
-    font-weight: 400;
-}
-.social-media > h2 {
-    font-size: 20px;
-    font-family: 'Inter';
-    font-weight: 400;
-}
-.adressa-number > p {
+.basic-text-footer {
     font-size: 14px;
     font-family: 'Inter';
     font-weight: 400;
 }
-
-.link-documents > p {
-    font-size: 14px;
-    font-family: 'Inter';
-    font-weight: 400;
-}
-.social-media > p {
-    font-size: 14px;
-    font-family: 'Inter';
-    font-weight: 400;
-}
-.social-media > img {
+.social-media-img {
     width: 40px;
     height: 40px;
 }
@@ -198,16 +171,49 @@ footer {
 
     /* Навігаційне меню та логотоп */
 
+    nav{
+        width: 100%;
+        height: 275px;
+    }
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .nav-bar-logo{
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
     .nav-menu{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 0px;
     }
-    nav {
-        padding-left: 6px;
-        padding-right: 7px;
+    .nav-menu > li {
+        display: inline-block;
+        justify-content: center;
+        margin-top: 10px;
+        width: 282px;
+        height: 35px;
+        text-align: center;
+        padding: 30px 4px 30px 4px;
     }
-    .nav-bar-logo {
-        margin: 4px 0px 23px 10px;
+    .nav-menu > li > a {
+        font-size: 24px;
+        font-family: 'Kanit';
+        font-weight: 400;
+        text-align: center;
     }
+    
+    .nav-menu > li:hover {
+        pointer-events: none;
+    }
+    
+
 
     /* основний вміст */
 
@@ -257,5 +263,30 @@ footer {
     }
     hr {
         margin: 0px;
+    }
+
+    /* підвал */
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 24px;
+        margin-right: 0px;
+    }
+    .title-text_footer {
+        text-align: center;
+    }
+    .copyright {
+        margin-left: 24px;
+    }
+    .social-media-img > img{
+        display: block;
+        justify-content: space-around;
+    }
+    .social-media-img {
+        text-align: center;
+    }
+    .social-media {
+        display: none;
     }
 }   
